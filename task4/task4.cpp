@@ -24,7 +24,7 @@ int main()
 {
     ifstream f("12.txt");
     if (!f.is_open()) {
-        cout << "Îøèáêà!" << endl;
+        cout << "ÃÃ¸Ã¨Ã¡ÃªÃ !" << endl;
         return 1;
     }
     std::vector<int> nums;
@@ -36,5 +36,6 @@ int main()
     f.close();
     int minMovesCount = minMoves(nums);
 	cout << minMovesCount <<endl;
+	system("pause");
     return 0;
 }
