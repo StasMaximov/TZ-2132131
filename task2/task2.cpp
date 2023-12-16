@@ -6,12 +6,12 @@ using namespace std;
  
 int main()
 {
-	setlocale(LC_ALL,"Russian");
+    setlocale(LC_ALL,"Russian");
     char const *File="123.txt",*File1="321.txt";
     float x1,y1,r,x,y;
     ifstream f(File);
     if (!(f.is_open()))
-        cout<<"Îøèáêà!"<<File;
+        cout<<"Ошибка!"<<File;
     else
     {
         while(!f.eof()) 
@@ -22,7 +22,7 @@ int main()
     }
     ifstream f1(File1);
     if (!(f1.is_open()))  
-        cout<<"Îøèáêà!"<<File1;
+        cout<<"Ошибка1!"<<File1;
     else
     {
         while(!f1.eof()) 
