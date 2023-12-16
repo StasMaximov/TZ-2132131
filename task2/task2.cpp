@@ -10,22 +10,22 @@ int main()
     char const *File="123.txt",*File1="321.txt";
     float x1,y1,r,x,y;
     ifstream f(File);
-    if (!(f.is_open()))  // проверка наличия файла с тестом
-        cout<<"Ошибка!"<<File;
+    if (!(f.is_open()))
+        cout<<"ГЋГёГЁГЎГЄГ !"<<File;
     else
     {
-        while(!f.eof()) // чтении из файла
-        {   
+        while(!f.eof()) 
+        {  
             f>>x1>>y1;
             f>>r;
         }
     }
     ifstream f1(File1);
-    if (!(f1.is_open()))  // проверка наличия файла с тестом
-        cout<<"Ошибка!"<<File1;
+    if (!(f1.is_open()))  
+        cout<<"ГЋГёГЁГЎГЄГ !"<<File1;
     else
     {
-        while(!f1.eof()) // чтении из файла
+        while(!f1.eof()) 
         {   
             f1>>x>>y;
             if ((pow(x-x1,2)+pow(y-y1,2))==pow(r,2))
