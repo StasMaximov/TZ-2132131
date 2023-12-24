@@ -9,12 +9,12 @@ int minMoves(vector<int>& nums)
     int moves=0,sum=0,average=0,i;
     int n=nums.size();
     for (i=0;i<n;i++) 
-	{
+    {
         sum += nums[i];
     }
     average=round(sum / n);
     for (i=0;i<n;i++) 
-	{
+    {
         moves += abs(nums[i]-average);
     }
     return moves;
@@ -22,17 +22,17 @@ int minMoves(vector<int>& nums)
 
 int main() 
 {
-	setlocale(LC_ALL,"Russian");
-	int n,i;
-    cout << "Ââåäèòå ðàçìåð ìàññèâà->";
+    setlocale(LC_ALL,"Russian");
+    int n,i;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°->";
     cin >> n;
     vector<int> nums(n);
-    cout << "Ââåäèòå ýëåìåíòû ìàññèâà->";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¼Ð°ÑÑÐ¸Ð²Ð°->";
     for (i=0;i<n;i++) 
-	{
+    {
     	cin >> nums[i];
     }
     int minMovesCount = minMoves(nums);
-    cout << "Ìèíèìóì->" << minMovesCount << endl;
+    cout << "ÐœÐ¸Ð½Ð¸Ð¼ÑƒÐ¼->" << minMovesCount << endl;
     return 0;
 }
